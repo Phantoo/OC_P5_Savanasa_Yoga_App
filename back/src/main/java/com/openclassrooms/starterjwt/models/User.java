@@ -48,7 +48,6 @@ public class User {
   @Size(max = 120)
   private String password;
 
-  @NonNull
   private boolean admin;
 
   @CreatedDate

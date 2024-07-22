@@ -22,7 +22,7 @@ public class TeacherController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> findById(@PathVariable("id") String id) {
+    public ResponseEntity<?> findById(@PathVariable String id) {
         try {
             Teacher teacher = this.teacherService.findById(Long.valueOf(id));
 

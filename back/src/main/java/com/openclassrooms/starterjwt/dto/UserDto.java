@@ -28,8 +28,7 @@ public class UserDto {
     @NonNull
     @Size(max = 20)
     private String firstName;
-
-    @NonNull
+    
     private boolean admin;
 
     @JsonIgnore

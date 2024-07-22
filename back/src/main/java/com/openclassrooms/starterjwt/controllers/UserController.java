@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> findById(@PathVariable("id") String id) {
+    public ResponseEntity<?> findById(@PathVariable String id) {
         try {
             User user = this.userService.findById(Long.valueOf(id));
 
@@ -41,7 +41,7 @@ public class UserController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<?> save(@PathVariable("id") String id) {
+    public ResponseEntity<?> save(@PathVariable String id) {
         try {
             User user = this.userService.findById(Long.valueOf(id));
 
